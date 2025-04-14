@@ -18,12 +18,8 @@ This API supports user authentication, role-based authorization, secure password
   - Title, Content, Author, Tags
   - Embedded Comments
   - Created/Updated Timestamps
-- Additional Features:
   - Pagination
   - Search (by title or content)
-  - Get all posts by specific user
-  - Sorting (by date, title)
-  - Like a post
 
 ---
 
@@ -33,7 +29,7 @@ This API supports user authentication, role-based authorization, secure password
 - Middleware to protect routes using JWT
 - Role-based authorization (`user` or `admin`)
 - Only authors or admins can update/delete posts
-- Admin-only routes supported
+- Admin-only routes supported to get all posts
 
 ---
 
@@ -47,10 +43,9 @@ This API supports user authentication, role-based authorization, secure password
 ---
 
 ### 🧠 Mongoose Model Enhancements
-- Virtual fields (e.g., `fullName`)
 - Pre/post schema hooks
 - Custom instance methods
-- Use of `.populate()` for author and comment resolution
+
 
 ---
 
